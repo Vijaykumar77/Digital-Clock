@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Manrope' , 'san-serif';
+}
+.main-container{
+    margin: 2% 10% 4% 10%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    
+}
+.container1{
+    width: 45%;
+    height: 580px;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15% 50% 12% 8% 13%;
+    
+}
+#clock-p{
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-image: url("./images/clock_logo.png");
+}
+#left-container{
+    margin-top: 30px;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    border-radius: 10px;
+}
+.left-container-inner{
+    
+    height: 33%;
+    position: relative;
+    
+}
+.left-container-inner-options{
+    height: 100%;
+    width: 80%;
+    display: inline-block;
+    position: absolute;
+    padding: 20px;
+}
+#div1{
+    background-image: url("./images/wake_up.png");
+    height: 100%;
+    width: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+#wakeup-time-selector{
+    margin: 10px 0px 0px 20px;
+    width: 180px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.vetical-line{
+    border-left: 2px solid #ccc;
+    height: 35px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 35px;
+}
+#div2{
+    background-image: url("./images/lunch_time.png");
+    height: 100%;
+    width: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+#lunch-time-selector{
+    margin: 10px 0px 0px 42px;
+    width: 180px;
+    height: 25px;
+    border-radius: 3px;
+
+}
+#div3{
+    background-image: url("./images/nap_time.png");
+    height: 100%;
+    width: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+#nap-time-selector{
+    margin: 10px 0px 0px 57px;
+    width: 180px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+#text-display{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bolder;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    border-radius: 10px;
+    color: white;
+    background-color: #9963fc;
+}
+#party-time{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,rgb(231, 35, 149), #6e54ec , #cb52f8);
+    color: white;
+}
+#party-time:hover{
+    background-image: linear-gradient(to left,rgb(231, 35, 149), #6e54ec , #cb52f8);
+
+}
+#display-block{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#div21, #div22, #div23{
+    background-color: hotpink;
+    font-size: 20px;
+    color: white;
+}
+
+#div21{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#div23{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.container2{
+    width: 45%;
+    height: 530px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 18% 90%;
+   
+}
+#digi-clock{
+    position: relative;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+#clock1{
+    width: 15%;
+    height: 80%;
+    float: left;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+#clock2{
+    width: 15%;
+    height: 80%;
+    float: left;
+    color: #8a11bf;
+    background-color: #F6E2FF;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+#clock3{
+    width: 5%;
+    height: 80%;
+    float: left;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clock4{
+    margin-left: 15px;
+    text-align: center;
+    width: 15%;
+    height: 80%;
+    font-size: 25px;
+    float: left;
+    padding-top: 18px;
+    color: #F6E2FF;
+    background-color: #BA11BF;
+}
+#box1{
+    width: 70%;
+    height: 100px;
+    position: absolute;
+    top: 8px;
+    margin: auto;
+    opacity: 0.71;
+    z-index: -1;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#box2{
+    width: 60%;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    margin: auto;
+    opacity: 0.3;
+    z-index: -2;
+    border-radius: 10px;
+    background-color: white;
+}
+#right-container{
+    margin-top: 35px;
+    position: relative;
+}
+#text-container{
+    position: relative;
+    top: 0;
+    padding-top: 5%;
+    padding-left: 5%;
+    width: 100%;
+    height: 20%;
+    font-size: 35px;
+    font-weight: bolder;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    color: #5d07e6;
+}
+.grid-item1{
+    font-size: 35px;
+}
+#img-container{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    background-position: center;
+    background-image: url("./images/defaul.png");
+    background-size: 100% 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
